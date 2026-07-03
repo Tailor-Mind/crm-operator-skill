@@ -1,0 +1,3 @@
+# Reserved for E077 Workstream 1 (T002): the two build scripts
+# generate_tool_index.py (tools.yaml -> tool-index.md) +
+# check_tool_contract.py (local drift-guard). Empty placeholder for W1.
