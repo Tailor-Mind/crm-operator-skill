@@ -18,7 +18,7 @@ description: >-
 license: Proprietary
 metadata:
   author: Tailor-Mind
-  version: 0.1.0
+  version: 0.1.1
 ---
 
 # Operating the TailorMind CRM
