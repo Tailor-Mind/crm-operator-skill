@@ -19,10 +19,10 @@ npx skills add Tailor-Mind/crm-operator-skill --skill operating-crm -a claude-co
 
 <!-- PUBLISH-PIPELINE-INSERT-ABOVE -->
 
-## [skill-v0.1.1] — 2026-07-03
+## [skill-v0.2.0] — 2026-07-08
 
-- Exported from Tailor-Mind/agentic-crm @ 29ce31c0343dc2ef2dc5437e0889ebf16c536322.
-- SKILL.md metadata.version: 0.1.1.
+- Exported from Tailor-Mind/agentic-crm @ c3ee4bd026786dcef3695aa39313d7ab160ba5f8.
+- SKILL.md metadata.version: 0.2.0.
 <!--
   The export job in publish-skill.yml inserts a new release stanza directly
   BELOW this marker (newest-first), of the shape:
@@ -37,6 +37,16 @@ npx skills add Tailor-Mind/crm-operator-skill --skill operating-crm -a claude-co
 
 ## [Unreleased]
 
+- **New capability — log interactions + manage follow-ups.** Added the
+  `references/recipes-interactions.md` recipe and a *Jobs* router row: log an
+  interaction (call / note / meeting / message / task) on a contact, optionally
+  flag a follow-up (`requires_followup` + `followup_due_at`), and review the
+  pending-follow-up queue (`list_followups`, with overdue / due-before). Added
+  the interaction tools to `referenced_tools` (`create_interaction`,
+  `list_interactions`, `get_interaction`, `list_followups`) and regenerated
+  `tool-index.md`. Logging is a first-class write (un-gated `POST /interactions`,
+  no `ACTOR_USER_ID_REQUIRED`); *completing* a follow-up remains a UI/API action
+  (no agent tool) — the recipe STOPs and reports rather than claiming completion.
 - **Dogfood-driven ref tightening (arg-shape accuracy).** The C5 3-model dogfood
   (Haiku / Sonnet / Opus) held every safety guardrail (0 unattended writes, 0
   cross-tenant, 100% propose-gate STOPs, no fabrication) but surfaced 5 recurring
