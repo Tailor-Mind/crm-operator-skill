@@ -6,7 +6,7 @@
 > reference tools **by name only** and never inline schemas. To change it, edit the
 > manifest and re-run the generator (or `check_tool_contract.py --regenerate`).
 >
-> Tools: **37** referenced of **97** canonical. Pinned to `contracts/mcp/tools.yaml` `target_contract_version: 1.0.0`.
+> Tools: **37** referenced of **102** canonical. Pinned to `contracts/mcp/tools.yaml` `target_contract_version: 1.0.0`.
 >
 > Ordering: stable sort by `(domain, name)`.
 
@@ -14,7 +14,7 @@
 | --- | --- | --- | --- |
 | `create_action_item` | action_items | Create a new ActionItem entity attached to a subject entity (Contact / Organization / Pilot / etc.) via the ``action_item_for_<subject_entity_type>`` relationship type. | `POST /api/v1/action-items` |
 | `list_channels` | channels | List configured communication channels for the instance. | `GET /api/v1/config/channels` |
-| `create_contact` | contacts | Create a new contact in the CRM | `POST /api/v1/contacts` |
+| `create_contact` | contacts | Create a new contact in the CRM. | `POST /api/v1/contacts` |
 | `get_contact` | contacts | Fetch a contact by ID with full profile data | `GET /api/v1/contacts/{contact_id}` |
 | `list_contacts` | contacts | List contacts with optional search and filters | `GET /api/v1/contacts` |
 | `create_entity` | entity | Create a new entity row of any registered type. | `POST /api/v1/entities` |

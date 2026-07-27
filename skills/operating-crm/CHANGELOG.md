@@ -19,10 +19,10 @@ npx skills add Tailor-Mind/crm-operator-skill --skill operating-crm -a claude-co
 
 <!-- PUBLISH-PIPELINE-INSERT-ABOVE -->
 
-## [skill-v0.3.0] — 2026-07-27
+## [skill-v0.4.0] — 2026-07-27
 
-- Exported from Tailor-Mind/agentic-crm @ a8df9ca408dd92cf92fd1556c8cabf7ff9ad9c18.
-- SKILL.md metadata.version: 0.3.0.
+- Exported from Tailor-Mind/agentic-crm @ 7f2fb4be3b3cd8c5132b3c5ec6dba57947c2cbc0.
+- SKILL.md metadata.version: 0.4.0.
 <!--
   The export job in publish-skill.yml inserts a new release stanza directly
   BELOW this marker (newest-first), of the shape:
