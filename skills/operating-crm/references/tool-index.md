@@ -47,5 +47,5 @@
 | `list_followups` | reports | Pending follow-up interactions with due dates | `GET /api/v1/interactions/followups` |
 | `full_text_search` | search | Search across contacts, organizations, and interactions using full-text matching | `POST /api/v1/search` |
 | `semantic_search` | search | Find conceptually similar content using AI embeddings | `POST /api/v1/search/semantic` |
-| `summarize_contact` | search | Generate an AI summary from a contact's interaction history | `POST /api/v1/ai/summarize` |
+| `summarize_contact` | search | Generate an AI summary of a contact from their profile, interactions, and relationships | `POST /api/v1/contacts/{contact_id}/summary` |
 | `summarize_conversation` | search | Generate an AI summary of a conversation thread | `POST /api/v1/ai/summarize` |
